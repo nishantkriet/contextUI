@@ -1,0 +1,17 @@
+<ListView
+[items]="mailList"
+class="small-spacing">
+<ng-template let-item="item" let-odd="odd" let-even="even">
+    <StackLayout [class.odd]="odd" [class.even]="even">
+          <Label [text]='"Name : " + item.name + "     Subject : " + item.subject' class="medium-spacing"></Label>
+    </StackLayout>
+    
+
+      
+    </ng-template>
+    <!-- <ng-template let-item="item">
+    
+    <Label [text]="item.id" class="medium-spacing"></Label>
+    </ng-template> -->
+
+</ListView>
